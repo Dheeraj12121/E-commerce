@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import UseReducer from "./components/Practice/UseReducer";
+import UseRedtodo from './components/Practice/useRedtotdo';
+// // import Product from "./components/Product";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import SingleProduct from "./SingleProduct";
+// import UseState from "./components/UseState";
+// import UseEffect from "./components/UseEffect";
+// import Uncontrolled from "./components/Uncontrolled";
+// import UseReducer from "./components/UseReducer";
+// import UseMemo from "./components/UseMemo";
+import UseState1 from "./components/UseState1";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+    <UseRedtodo/>
+      {/* <Router>
+        <Routes>
+          <Route path="/singleproduct/:id" element={<SingleProduct />} />
+        </Routes>
+      </Router> */}
     </div>
   );
 }
