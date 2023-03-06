@@ -1,6 +1,6 @@
 import "./App.css";
-import UseReducer from "./components/Practice/UseReducer";
-import UseRedtodo from './components/Practice/useRedtotdo';
+// import UseReducer from "./components/Practice/UseReducer";
+// import UseRedtodo from './components/Practice/useRedtotdo';
 // // import Product from "./components/Product";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import SingleProduct from "./SingleProduct";
@@ -9,13 +9,14 @@ import UseRedtodo from './components/Practice/useRedtotdo';
 // import Uncontrolled from "./components/Uncontrolled";
 // import UseReducer from "./components/UseReducer";
 // import UseMemo from "./components/UseMemo";
-import UseState1 from "./components/UseState1";
+// import UseState1 from "./components/UseState1";
+import Login from './components/login/Login';
 
 
 function App() {
   return (
     <div className="">
-    <UseRedtodo/>
+    <Login/>
       {/* <Router>
         <Routes>
           <Route path="/singleproduct/:id" element={<SingleProduct />} />
