@@ -16,8 +16,7 @@ const reducer = (state, action) => {
 
 const UseReducer = () => {
 
-    const [state, dispatch] = useReducer(reducer, initialState)
-
+    const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import "./App.css";
+import UseReducer from "./components/UseReducer/UseReducer";
 // import UseReducer from "./components/Practice/UseReducer";
 // import UseRedtodo from './components/Practice/useRedtotdo';
 // // import Product from "./components/Product";
@@ -10,13 +11,13 @@ import "./App.css";
 // import UseReducer from "./components/UseReducer";
 // import UseMemo from "./components/UseMemo";
 // import UseState1 from "./components/UseState1";
-import Login from './components/login/Login';
+// import Login from './components/login/Login';
 
 
 function App() {
   return (
     <div className="">
-    <Login/>
+    <UseReducer/>
       {/* <Router>
         <Routes>
           <Route path="/singleproduct/:id" element={<SingleProduct />} />

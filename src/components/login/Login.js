@@ -15,13 +15,13 @@ const App = () => {
       <h1 className="heading">Login Form</h1>
       <form onSubmit={handleSubmit} noValidate>
         <div className="form-container">
-          <LoginInput
+          <input
             state={state}
             handleChange={handleChange}
             name="email"
             label="E-mail"
           />
-          <LoginInput
+          <input
             state={state}
             handleChange={handleChange}
             name="password"
@@ -32,6 +32,7 @@ const App = () => {
           </button>
         </div>
       </form>
+      <p>{}</p>
     </div>
     // </LoginContext.Provider>
   );
@@ -41,7 +42,7 @@ const App = () => {
 
 export default App;
 
-const LoginInput = ({ name, label, state, handleChange }) => {
+const input = ({ name, label, state, handleChange }) => {
   // const {state, handleChange} = useContext(LoginContext);
   return (
     <label>

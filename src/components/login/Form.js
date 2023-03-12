@@ -72,11 +72,6 @@ const Form = callback => {
     },[state.isSubmiting])
     
     return {state, handleChange,handleSubmit}
-  return (
-    <div>
-
-    </div>
-  )
 }
 
 export default Form
