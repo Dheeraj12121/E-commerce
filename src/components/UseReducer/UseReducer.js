@@ -5,12 +5,30 @@ const Button = styled.button`
   background: palevioletred;
   border-radius: 3px;
   border: none;
-  color: white;
-  box-shadow: 1px 2px 3px 2px black;
-  margin-left:5px;
+  color: blue;
+  margin-left: 5px;
   height: 20px;
   
+
+  &:hover {
+    box-shadow: 1px 2px 3px 2px black;
+  }
+
+  span{
+    color: white;
+
+    .b{
+        color: blue;
+    }
+    
+  }
 `;
+
+const Head = styled.h2`
+background-color: ${({bg}) => bg};
+
+
+`
 
 const initalState = {
   count: 0,
@@ -26,6 +44,7 @@ const reducer = (state, action) => {
       throw new Error();
   }
 };
+ 
 
 const UseReducer = () => {
   const [state, dispatch] = useReducer(reducer, initalState);
@@ -35,7 +54,8 @@ const UseReducer = () => {
       <h1>hh</h1>
       <p>{state.count}</p>
       <Button onClick={() => dispatch({ type: "inc" })}>+</Button>
-      <Button onClick={() => dispatch({ type: "dec" })}>-</Button>
+      <Button onClick={() => dispatch({ type: "dec" })}>- <span>plus <b className="b">inc</b></span></Button>
+      <Head bg='red'>styled</Head>
     </div>
   );
 };
