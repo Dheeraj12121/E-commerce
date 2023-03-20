@@ -53,6 +53,7 @@ const UseReducer = () => {
     <div>
       <h1>hh</h1>
       <p>{state.count}</p>
+      <h2>Bad boy</h2>
       <Button onClick={() => dispatch({ type: "inc" })}>+</Button>
       <Button onClick={() => dispatch({ type: "dec" })}>- <span>plus <b className="b">inc</b></span></Button>
       <Head bg='red'>styled</Head>
